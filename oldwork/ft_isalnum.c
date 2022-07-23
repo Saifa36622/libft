@@ -6,16 +6,14 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 10:25:26 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/23 10:29:59 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/23 11:48:15 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
-
-int		ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-	if ((c >= '0' && c <= '9') ||
-		(c >= 'a' && c <= 'z') ||
+	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || \
 		(c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
