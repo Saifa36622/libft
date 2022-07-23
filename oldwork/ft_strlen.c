@@ -6,19 +6,19 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 01:16:41 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/24 01:18:13 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/24 01:19:46 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //include "libft.h"
 #include <stdlib.h>
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlen(const char *x)
 {
-	size_t	i;
+	size_t	y;
 
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
+	y = 0;
+	while (x[y])
+		y++;
+	return (y);
 }
