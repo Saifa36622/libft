@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/24 01:21:56 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/24 01:36:59 by smeethon         ###   ########.fr       */
+/*   Created: 2022/07/24 01:37:28 by smeethon          #+#    #+#             */
+/*   Updated: 2022/07/24 01:46:33 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include "libft.h"
 #include <stdlib.h>
 
-void	*ft_memset(void *b, int c, size_t len)
+void	ft_bzero(void *s, size_t n)
 {
-	size_t			x;
 	unsigned char	*y;
+	size_t			x;
 
 	x = 0;
-	y = (unsigned char *)b;
-	while (x < len)
+	y = (unsigned char *)s;
+	while (x < n)
 	{
-		y[x] = c;
+		y[x] = 0;
 		x++;
 	}
-	return (b = y);
+	s = y;
 }
-// line 15 -> man memset fuc 
-// line 21 -> change b to unsigned char to use in return line 
-// line 27 -> can compare y to b because y and b is unsigned char 
+// line 16 -> man memset fuc 
+// line 22 -> change s to unsigned char to use in compare line (bzero -
+// require no return)
+// line 28 -> can compare s to y because y and s is unsigned char 
