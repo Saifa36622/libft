@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 01:37:28 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/24 01:46:33 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/24 01:51:59 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,10 @@ void	ft_bzero(void *s, size_t n)
 	}
 	s = y;
 }
+/* 
+bzeo is fuc that use to erase data in n byte of the mem start at s and 
+(over write or write ???) that mem by '\0' 
+*/
 // line 16 -> man memset fuc 
 // line 22 -> change s to unsigned char to use in compare line (bzero -
 // require no return)

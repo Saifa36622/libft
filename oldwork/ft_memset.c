@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 01:21:56 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/24 01:36:59 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/24 01:54:56 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,9 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b = y);
 }
+/*
+mem set is fuc that fill the len byte of mem start at b by the constant in byte c
+*/
 // line 15 -> man memset fuc 
 // line 21 -> change b to unsigned char to use in return line 
 // line 27 -> can compare y to b because y and b is unsigned char 
