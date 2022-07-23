@@ -6,11 +6,11 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 10:18:23 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/23 10:28:02 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/23 10:30:00 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
 int		ft_isdigit(int x)
 {
@@ -21,5 +21,5 @@ int		ft_isdigit(int x)
 /*
 int main ()
 {
-    	printf("%d", ft_isdigit('2s'));
+    	printf("%d", ft_isdigit('2'));
 }*/

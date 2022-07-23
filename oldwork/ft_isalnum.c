@@ -6,11 +6,11 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 10:25:26 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/23 10:27:59 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/23 10:29:59 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
 int		ft_isalnum(int c)
 {
