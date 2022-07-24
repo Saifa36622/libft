@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int x)
+int	ft_isascii(int x)
 {
 	if (x >= 0 && x <= 127)
 		return (1);
@@ -19,5 +19,5 @@ int	ft_isdigit(int x)
 /* 
 int main ()
 {
-    	printf("%d", ft_isdigit(0));
+    	printf("%d", ft_isascii(0));
 } */
