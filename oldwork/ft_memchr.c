@@ -6,7 +6,7 @@
 /*   By: smeethon <marvin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 01:36:37 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/25 01:56:52 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/25 02:08:07 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void *ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;
 	size_t			x;
@@ -29,7 +29,7 @@ void *ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -43,12 +43,11 @@ int main () {
    printf("String after |%c| is - |%s|\n", ch, ret);
 
    return(0);
-}
-
-
+}*/
 /*
     memchr use to searh scan  n byte point by s and scan for c 
-    *** return pointer of matching byte or ( NULL -> does not have C in mem )***  
+    *** return pointer of matching byte or 
+    ( NULL -> does not have C in mem )***  
 */
 // line 22 -> convert s to unsigned char keep it in str 
 // line 26 -> convert c to unsigned char to compare it to str[x]
