@@ -6,7 +6,7 @@
 /*   By: smeethon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 02:13:59 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/25 02:20:54 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/25 02:27:36 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -55,7 +55,7 @@ int main () {
    }
    
    return(0);
-}
+}*/
 /*
 
 */
