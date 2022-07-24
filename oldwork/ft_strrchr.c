@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 03:26:30 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/24 03:34:30 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/24 13:00:37 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ int main () {
    return(0);
 }*/
 /*
+	man strrchr
     strrchr is identical to strchr but it locate the last occurence of c
 */
 // line 31 32 -> convert s and c to char and char * to compare and return them
