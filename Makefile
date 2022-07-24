@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tliangso <tliangso@student.42.fr>          +#+  +:+       +#+         #
+#    By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/22 03:49:49 by tliangso          #+#    #+#              #
-#    Updated: 2022/06/22 14:18:45 by tliangso         ###   ########.fr        #
+#    Updated: 2022/07/24 12:31:38 by smeethon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ OBJS		= ${SRCS:.c=.o}
 
 HEAD		= includes/
 
-NAME		= make 
+NAME		= libft.a
 
 GCC			= gcc
 RM			= rm -f
