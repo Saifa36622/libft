@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smeethon <marvin@student.42.fr>            +#+  +:+       +#+        */
+/*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 01:36:37 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/25 02:16:42 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/31 23:02:44 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#inlclude "libft.h"
-#include <stdlib.h>
-#include <string.h>
+#include "libft.h"
+//#include <stdlib.h>
+//#include <string.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

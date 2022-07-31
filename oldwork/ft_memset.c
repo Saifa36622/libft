@@ -6,12 +6,12 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 01:21:56 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/25 01:55:43 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/31 23:02:00 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <stdlib.h>
+#include "libft.h"
+//#include <stdlib.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {

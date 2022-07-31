@@ -6,10 +6,11 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 02:05:39 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/24 02:09:08 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/31 23:02:04 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 //#include <string.h>
 //#include <stdio.h>
 
