@@ -6,13 +6,13 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/23 09:44:48 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/31 23:07:52 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/31 23:14:02 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-int	ft_isalpha(char *str)
+/*int	ft_isalpha(char *str)
 {
 	int	x;
 
@@ -27,6 +27,14 @@ int	ft_isalpha(char *str)
 		return (0);
 	}
 	return (1);
+}*/
+#include "libft.h"
+
+int	ft_isalpha(int c)
+{
+	if ((c >= 'a' && c <= 'z' ) || (c >= 'A' && c <= 'Z'))
+		return (1);
+	return (0);
 }
 /*
 int main ()
