@@ -6,11 +6,11 @@
 /*   By: smeethon <smeethon@student.42.fr>           +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 00:07:21 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/03 02:21:37 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/03 02:42:20 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -23,7 +23,7 @@ int	ft_atoi(const char *str)
 	z = 0;
 	while (str[z] && (str[z] == '\f' || str[z] == '\t' || str[z] == ' ' || \
 			str[z] == '\n' || str[z] == '\r' || str[z] == '\v'))
-		i++;
+		z++;
 	if (str[z] == '-' || str[z] == '+')
 	{
 		if (str[z] == '-')
@@ -39,7 +39,7 @@ int	ft_atoi(const char *str)
 	y *= x;
 	return (y);
 }
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -57,4 +57,4 @@ int main () {
    printf("String value = %s, Int value = %d\n", str, val);
 
    return(0);
-}
+}*/
