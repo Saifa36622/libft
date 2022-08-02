@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smeethon <smeethon@student.42.fr>              +#+  +:+       +#+    */
+/*   By: smeethon <smeethon@student.42.fr>           +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 00:07:21 by smeethon          #+#    #+#             */
 /*   Updated: 2022/08/03 00:07:21 by smeetrhon        ###   ########.fr       */
