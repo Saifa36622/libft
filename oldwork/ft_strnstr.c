@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 00:16:28 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/03 03:10:29 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/03 03:28:39 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ strnstr(const char	*x, const char *y, size_t len)
 {
 
 }*/
-#include"libft.h"
+#include <stdlib.h>
+//#include"libft.h"
 
 char	*strnstr(const char	*big, const char *little, size_t len)
 {
@@ -41,12 +42,15 @@ char	*strnstr(const char	*big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+/*
 #include <string.h>
+#include <stdio.h>
 int main()
 {
 	const char *largestring = "Foo Bar Baz";
 	const char *smallstring = "Bar";
 	char *ptr;
+	char *ptr2;
 	ptr = strnstr(largestring, smallstring, 4);
-	ptr = ft_strnstr(largestring, smallstring, 4)
-}
+	ptr2 = ft_strnstr(largestring, smallstring, 4);
+}*/
