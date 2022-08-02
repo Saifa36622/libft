@@ -1,40 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/23 11:44:41 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/23 11:48:18 by smeethon         ###   ########.fr       */
+/*   Created: 2022/07/23 09:44:48 by smeethon          #+#    #+#             */
+/*   Updated: 2022/07/31 23:14:02 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-int	ft_str_is_printable(char *str)
+/*int	ft_isalpha(char *str)
 {
 	int	x;
 
 	x = 0;
 	if (str[x] == '\0')
-	{
 		return (1);
-	}
-	while (str[x] != '\0')
+	while (str[x])
 	{
-		if (str[x] >= 32 && str[x] <= 126)
+		if ((str[x] >= 'A' && str[x] <= 'Z') || \
+				(str[x] >= 'a' && str[x] <= 'z'))
 			x++;
-		else
-		{
-			return (0);
-		}
+		return (0);
 	}
 	return (1);
-}
-/* 
-int	main()
+}*/
+#include "libft.h"
+
+int	ft_isalpha(int c)
 {
-	printf("%d\n", ft_str_is_printable("d5r67tyuihgfebhvg"));
-	printf("%d", ft_str_is_printable("\n\t\v\f"));
-} */
+	if ((c >= 'a' && c <= 'z' ) || (c >= 'A' && c <= 'Z'))
+		return (1);
+	return (0);
+}
+/*
+int main ()
+{
+	ft_str_is_alpha("hello");
+}
+*/

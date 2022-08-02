@@ -6,12 +6,12 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 01:37:28 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/24 01:56:15 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/31 23:02:55 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <stdlib.h>
+#include "libft.h"
+//#include <stdlib.h>
 
 void	ft_bzero(void *s, size_t n)
 {

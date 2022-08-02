@@ -6,12 +6,12 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 02:50:08 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/24 03:15:12 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/07/31 23:02:02 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <stdlib.h>
+#include "libft.h"
+//#include <stdlib.h>
 
 char	*ft_strchr(const char *s, int c)
 {

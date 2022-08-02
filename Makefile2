@@ -1,16 +1,18 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
+#    Makefile2                                          :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/07/24 18:12:40 by smeethon          #+#    #+#              #
-#    Updated: 2022/08/01 00:13:26 by smeethon         ###   ########.fr        #
+#    Created: 2022/08/01 00:11:09 by smeethon          #+#    #+#              #
+#    Updated: 2022/08/01 00:13:24 by smeethon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-DIRSRC		= srcs/
+NAME = libft.a
+
+FLAGS = -Wall -Wextra -Werror
 
 SRC			= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 				ft_toupper.c ft_tolower.c ft_strlcpy.c ft_memset.c ft_bzero.c \
@@ -24,33 +26,20 @@ SRC			= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 				ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
 				ft_lstclear.c ft_lstiter.c ft_lstmap.c 
 
-SRCS		= ${addprefix ${DIRSRC}, ${SRC}}
+OBJS = $(SRCS:.c=.o)
 
-OBJS		= ${SRCS:.c=.o}
-
-HEAD		= .
-
-NAME		= libft.a
-
-GCC			= gcc
-RM			= rm -f
-
-FLAGS		= -Wall -Wextra -Werror
+all: $(NAME)
 
 .c.o:
-	${GCC} ${FLAGS} -c -I {HEAD} $< -o ${<:.c=.o}
+	gcc $(FLAGS) -c $< -o $(<:.c=.o)
 
-${NAME}:	${OBJS}
-			${GCC} -o ${NAME} ${OBJS} ${FLAGS}
-
-all:		${NAME}
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
 clean:
-			${RM} ${OBJS}
+	rm -f $(OBJS)
 
-fclean:		clean
-			${RM} ${NAME}
+fclean: clean
+	rm -f  $(NAME)
 
-re:			fclean all
-
-.PHONY:		all clean fclean re
+re: fclean all
