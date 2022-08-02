@@ -41,5 +41,4 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 char			*ft_strrchr(char *s, int c);
 char			*ft_strnstr(char *big, char *little, size_t len);
 
-
 #endif
