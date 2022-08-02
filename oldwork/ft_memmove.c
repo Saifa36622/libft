@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>            +#+  +:+      +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 00:27:17 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/03 02:19:57 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/03 02:29:09 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,18 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	z = (char *)dst;
 	y = 0;
 	if (z > x)
+	{
 		while (len-- > 0)
 			z[len] = x[len];
+	}
 	else
+	{
 		while (y < len)
 		{
 			z[y] = x[y];
 			y++;
 		}
+	}
 	return (dst);
 }
 // man memmove 
