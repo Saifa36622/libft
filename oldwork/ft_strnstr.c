@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 00:16:28 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/01 00:18:16 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/03 03:10:29 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ strnstr(const char	*x, const char *y, size_t len)
 }*/
 #include"libft.h"
 
-char *strnstr(const char	*big, const char *little, size_t len)
+char	*strnstr(const char	*big, const char *little, size_t len)
 {
 	size_t	x;
 	size_t	y;
 	size_t	z;
-	
+
 	x = 0;
 	y = 0;
 	if (!little[0])
@@ -41,4 +41,3 @@ char *strnstr(const char	*big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
