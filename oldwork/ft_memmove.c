@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smeethon <marvin@student.42.fr>              +#+  +:+      +#+       */
+/*   By: smeethon <smeethon@student.42.fr>              +#+  +:+      +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 00:27:17 by smeethon          #+#    #+#             */
 /*   Updated: 2022/08/03 00:27:17 by smeethon         ###   ########.fr       */
