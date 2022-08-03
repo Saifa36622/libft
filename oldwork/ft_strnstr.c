@@ -62,6 +62,7 @@ int main()
      searched.
 */
 /*
+					***return value*** ->
   if little is an empty string, big is returned; if little occurs 
   nowhere in big, NULL is returned otherwise a pointer to the 
   first character of the first occurrence of little is returned.
