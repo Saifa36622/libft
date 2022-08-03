@@ -54,3 +54,15 @@ int main()
 	ptr = strnstr(largestring, smallstring, 4);
 	ptr2 = ft_strnstr(largestring, smallstring, 4);
 }*/
+/*
+ fuc that locates the first occurrence of the null-termi-
+     nated string "little" in the string "big" 
+	 where not more than len characters are searched.
+	 Characters that appear after a `\0' character are not
+     searched.
+*/
+/*
+  if little is an empty string, big is returned; if little occurs 
+  nowhere in big, NULL is returned otherwise a pointer to the 
+  first character of the first occurrence of little is returned.
+*/
