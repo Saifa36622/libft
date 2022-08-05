@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 12:49:38 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 13:10:06 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 13:12:24 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,31 @@ void	*ft_calloc(size_t num, size_t size)
 	ft_bzero(x, num * size);
 	return (x);
 }
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+   int i, n;
+   int *a;
+
+   printf("Number of elements to be entered:");
+   scanf("%d",&n);
+
+   a = (int*)calloc(n, sizeof(int));
+   printf("Enter %d numbers:\n",n);
+   for( i=0 ; i < n ; i++ ) {
+      scanf("%d",&a[i]);
+   }
+
+   printf("The numbers entered are: ");
+   for( i=0 ; i < n ; i++ ) {
+      printf("%d ",a[i]);
+   }
+   free( a );
+   
+   return(0);
+}*/
 /* 
     calloc == mem allocator
     -> allocate the request mem and return the pointer 
