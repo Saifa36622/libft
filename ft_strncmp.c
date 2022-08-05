@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 12:33:59 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 14:20:16 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 14:31:29 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int main () {
    
    return(0);
 }
-/*
+*/
 /*
     strncmp use to compare str (charecter after '\0' will not be compare 
     *** '\200' is greater than '\0' ***
