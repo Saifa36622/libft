@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 00:27:17 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 13:44:46 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 14:14:15 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,12 +46,12 @@ int main () {
    const char src[]  = "newstring";
 
    printf("Before memmove dest = %s, src = %s\n", dest, src);
-   memmove(dest, src, 9);
+   ft_memmove(dest, src, 9);
    printf("After memmove dest = %s, src = %s\n", dest, src);
 
    return(0);
-}
-*/
+}*/
+
 /*
     dst -> pointer to desttination array (copy to this array)
     src -> pointer to src of data you want to copy

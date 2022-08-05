@@ -6,14 +6,14 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 02:50:08 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/31 23:02:02 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 14:17:41 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdlib.h>
 
-char	*ft_strchr(const char *s, int c)
+char    *strchr(const char *s, int c)
 {
 	while (*s)
 	{
@@ -32,7 +32,7 @@ int main () {
    const char ch = '.';
    char *ret;
 
-   ret = strchr(str, ch);
+   ret = ft_strchr(str, ch);
 
    printf("String after |%c| is - |%s|\n", ch, ret);
    

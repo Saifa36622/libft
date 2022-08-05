@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 01:21:56 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 13:44:13 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 14:14:50 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int main () {
    strcpy(str,"This is string.h library function");
    puts(str);
 
-   memset(str,'$',7);
+   ft_memset(str,'$',7);
    puts(str);
    
    return(0);

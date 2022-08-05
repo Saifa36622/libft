@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 03:26:30 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 13:49:17 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 14:18:17 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,8 @@ int main () {
 	s -> this is C str
 	c -> the char to be locate -> pass as int but convert back to char
 */
-// return value -> return the last occurance of the char in str ,if the value is not 
-// found -> the func will return the null pointer
+// return value -> return the last occurance of the char in str ,
+//if the value is not found -> the func will return the null pointer
 /*
 	man strrchr
     strrchr is identical to strchr but it locate the last occurence of c
