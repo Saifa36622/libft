@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 12:33:59 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/31 23:02:08 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 14:20:16 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int main () {
    strcpy(str1, "abct");
    strcpy(str2, "ababnkwfkwfesc");
 
-   ret = strncmp(str1, str2, 4);
+   ret = ft_strncmp(str1, str2, 4);
 
    if(ret < 0) {
       printf("str1 is less than str2");

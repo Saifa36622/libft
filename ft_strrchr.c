@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 03:26:30 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 14:18:17 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 14:20:13 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int main () {
    const char ch = '.';
    char *ret;
 
-   ret = strrchr(str, ch);
+   ret = ft_strrchr(str, ch);
 
    printf("String after |%c| is - |%s|\n", ch, ret);
    
