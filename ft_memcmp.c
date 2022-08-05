@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 02:13:59 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/31 23:02:16 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 13:27:22 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,12 +57,13 @@ int main () {
    return(0);
 }*/
 /*
-
+	s1 s2 -> pointer to area of mem
+	n -> num of byte to be compare
 */
 /*
  	memcmp use to compare mem start at n byte in s1 and s2 areas
 	return like strcmp 
-	0 < 
-	0 >
-	== 0
+	0 < == str1 less than str2 
+	0 > == str2 less than str1
+	== 0 str1 equal str2
  */
