@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 02:13:59 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 14:12:15 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 18:03:22 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	t1 = (unsigned const char *)s1;
 	t2 = (unsigned const char *)s2;
-	if (t1 == NULL || t2 == NULL)
+	if (!n)
 		return (0);
 	while (n)
 	{
@@ -56,6 +56,9 @@ int main () {
    
    return(0);
 }*/
+/*
+line 23 -> if -> check null terminate  
+*/
 /*
 	s1 s2 -> pointer to area of mem
 	n -> num of byte to be compare
