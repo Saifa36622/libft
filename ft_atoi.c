@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smeethon <smeethon@student.42.fr>           +#+  +:+       +#+       */
+/*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 00:07:21 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/03 02:42:20 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 14:05:43 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,11 @@ int main () {
    char str[20];
    
    strcpy(str, "98993489");
-   val = atoi(str);
+   val = ft_atoi(str);
    printf("String value = %s, Int value = %d\n", str, val);
 
    strcpy(str, "tutorialspoint.com");
-   val = atoi(str);
+   val = ft_atoi(str);
    printf("String value = %s, Int value = %d\n", str, val);
 
    return(0);

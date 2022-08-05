@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 01:36:37 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 13:25:23 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 14:11:20 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 //#include <stdlib.h>
 //#include <string.h>
 
-void	*ft_memchr(const void *s, int c, size_t n)
+void *memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;
 	size_t			x;
@@ -38,11 +38,28 @@ int main () {
    const char ch = '.';
    char *ret;
 
-   ret = memchr(str, ch, strlen(str));
+   ret = ft_memchr(str, ch, strlen(str));
 
    printf("String after |%c| is - |%s|\n", ch, ret);
 
    return(0);
+}*/
+/*
+#include <stdio.h>
+#include <string.h>
+ 
+int main(void)
+{
+    const char str[] = "ABCDEFG";
+    const int chars[] = {'D', 'd'};
+    for (size_t i = 0; i < sizeof chars / (sizeof chars[0]); ++i)
+    {
+        const int c = chars[i];   
+        const char *ps = ft_memchr(str, c, strlen(str));
+        ps ? printf ("character '%c'(%i) found: %s\n", c, c, ps)
+           : printf ("character '%c'(%i) not found\n", c, c);
+    }
+    return 0;
 }*/
 /*
 	s -> pointer to the mem area you want to searh

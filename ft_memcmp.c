@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 02:13:59 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 13:27:22 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 14:12:15 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int main () {
    memcpy(str1, "abcdef", 6);
    memcpy(str2, "ABCDEF", 6);
 
-   ret = memcmp(str1, str2, 5);
+   ret = ft_memcmp(str1, str2, 5);
 
    if(ret > 0) {
       printf("str2 is less than str1");

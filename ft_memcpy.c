@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 15:58:45 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 13:34:10 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 14:12:54 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int main () {
    char dest[50];
    strcpy(dest,"Heloooo!!");
    printf("Before memcpy dest = %s\n", dest);
-   memcpy(dest, src, strlen(src)+1);
+   ft_memcpy(dest, src, strlen(src)+1);
    printf("After memcpy dest = %s\n", dest);
    
    return(0);
