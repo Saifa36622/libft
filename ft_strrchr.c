@@ -6,11 +6,11 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 03:26:30 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 14:20:13 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 17:31:33 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	lenght(char *str)
+static int	lenght(char *str)
 {
 	int	x;
 
