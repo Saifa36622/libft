@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 12:49:38 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 13:02:48 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 13:10:06 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,13 @@
 
 void	*ft_calloc(size_t num, size_t size)
 {
-    write (1, "try", 3);
+	void	*x;
+
+	x = malloc(num * size);
+	if (!x)
+		return (NULL);
+	ft_bzero(x, num * size);
+	return (x);
 }
 /* 
     calloc == mem allocator
