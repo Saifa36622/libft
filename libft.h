@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 12:30:45 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 21:53:41 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 22:17:18 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,7 @@ char			*ft_strnstr(const char *big, const char *little, size_t len);
 char			*ft_strdup(const char *s);
 void			*ft_calloc(size_t num, size_t size);
 void			ft_putchar_fd(char c, int fd);
+void	        ft_putendl_fd(char *x, int fd);
+void	        ft_putstr_fd(char *x, int fd);
 
 #endif
