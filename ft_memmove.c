@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smeethon <smeethon@student.42.fr>            +#+  +:+      +#+       */
+/*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 00:27:17 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/03 02:50:42 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 13:44:46 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,12 @@ int main () {
    return(0);
 }
 */
+/*
+    dst -> pointer to desttination array (copy to this array)
+    src -> pointer to src of data you want to copy
+    n -> number of byte you want to copy
+*/
+
 // man memmove 
 /*fuc that copy the n byte from the mem area of *src to *dst and the copying 
 	takes place as though the bytes in src are first copied into a
