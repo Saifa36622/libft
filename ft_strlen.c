@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 01:16:41 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 21:23:33 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 21:24:17 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ size_t	ft_strlen(const char *x)
 	size_t	y;
 
 	y = 0;
-	if (!x)
-		return (0);
 	while (x[y])
 		y++;
 	return (y);
