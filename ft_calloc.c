@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 12:49:38 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 13:12:24 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 13:19:32 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ int main () {
    
    return(0);
 }*/
+// calloc -> unit-test error in max size is acceptable 
 /* 
     calloc == mem allocator
     -> allocate the request mem and return the pointer 
