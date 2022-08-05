@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 01:36:37 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/31 23:02:44 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 13:24:18 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,13 @@ int main () {
 
    return(0);
 }*/
+/*
+	s -> pointer to the mem area you want to searh
+	c -> value to be pass as int but the func will do as byte per byte 
+	searh using unsigned char conversion of c ( -> line 26 convert c to 
+	unsighned char)*
+	n -> num of byte to be analyzed
+*/
 /*
     memchr use to searh scan  n byte point by s and scan for c 
     *** return pointer of matching byte or 
