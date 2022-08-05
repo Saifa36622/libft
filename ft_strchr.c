@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 02:50:08 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 17:42:32 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 17:48:49 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,9 @@ int main () {
    
    return(0);
 }*/
+/*
+    line 24 - 25 -> add to make func work with \0 (unit test)
+*/
 /*
     strchr use for locate character in str (convert c to char) there for 
     if c is '\0' func will locate terminater '\0'
