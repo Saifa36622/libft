@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smeethon <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 15:58:45 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/03 16:01:31 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 13:34:10 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,12 @@ int main () {
    
    return(0);
 }*/
+/* 
+    dst -> pointer to desttination array (copy to this array)
+    src -> pointer to src of data you want to copy
+    n -> number of byte you want to copy
+*/
+// return value -> pointer of destination == dst
 /*
     a func that cpy n byte from the mem area of src to mem area of dst 
     return -> fuch return dst
