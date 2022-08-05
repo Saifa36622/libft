@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 01:21:56 by smeethon          #+#    #+#             */
-/*   Updated: 2022/07/31 23:02:00 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/05 13:44:13 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,30 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b = y);
 }
 /*
+#include <stdio.h>
+#include <string.h>
+
+int main () {
+   char str[50];
+
+   strcpy(str,"This is string.h library function");
+   puts(str);
+
+   memset(str,'$',7);
+   puts(str);
+   
+   return(0);
+}*/
+/*
 mem set is fuc that fill the len byte of mem start at b by the constant in byte c
 */
+/*
+	b -> pointer to area of mem to fill
+	c -> value to be set ,pass as int but the func will fill the area of mem with 
+	unsigned char of conversion of this value
+	n -> num of byte to be set to the value
+*/
+// Return value -> return the pointer to the mem area
 // line 15 -> man memset fuc 
 // line 21 -> change b to unsigned char to use in return line 
 // line 27 -> can compare y to b because y and b is unsigned char 
