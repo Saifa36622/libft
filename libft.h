@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 12:30:45 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/06 23:45:51 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/07 00:44:48 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,6 @@ void			ft_putstr_fd(char *x, int fd);
 void			ft_putnbr_fd(int n, int fd);
 char			*ft_substr(const char *s, unsigned int start, size_t len);
 char			*ft_strmapi(const char *s, char (*f)(unsigned int, char));
-void	        ft_striteri(char *s, void (*f)(unsigned int, char *));
+void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 #endif
