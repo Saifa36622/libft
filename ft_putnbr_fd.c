@@ -6,11 +6,16 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 10:27:09 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/06 10:32:32 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/06 10:41:33 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	write2(char x, int fd)
+{
+	write(fd, &x, 1);
+}
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -20,12 +25,12 @@ void	ft_putnbr_fd(int n, int fd)
 	if (n == -2147483648)
 		ft_putstr_fd("-2147483648", fd);
 	else if (n == 0)
-		write (fd, "0", 1);
+		write2 ('0', fd);
 	else
 	{
 		if (n < 0)
 		{
-			write (fd, "-", 1);
+			write2 ('-', fd);
 			n *= -1;
 		}
 		y = 1;
@@ -34,7 +39,7 @@ void	ft_putnbr_fd(int n, int fd)
 		while (y)
 		{
 			x = n / y + '0';
-			write (fd, &x, 1);
+			write2 (x, fd);
 			n %= y;
 			y /= 10;
 		}
