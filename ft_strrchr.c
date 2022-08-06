@@ -37,7 +37,7 @@ char	*ft_strrchr(const char *s, int c)
 			return (&str[x]);
 		x--;
 	}
-	str = NULL;
+	str = 0;
 	return (str);
 }
 /*
