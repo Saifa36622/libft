@@ -22,11 +22,9 @@ address to 'f' to be modified if necessary.
 */
 /*
         My interpret
-        applied f to each char of the str 
-        and pass by f that will modified it 
+        applied func f to each char of the str 
+        by pass by f that will modified it (if neces) 
         and then x++
-        ***My easy interpret***
-        -> make  
 */
 /*
     line 8 -> check null
