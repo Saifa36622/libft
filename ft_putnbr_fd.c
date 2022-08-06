@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 10:27:09 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/06 10:41:33 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/06 10:46:31 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void	ft_putnbr_fd(int n, int fd)
 	char	x;
 	int		y;
 
+	y = 1;
 	if (n == -2147483648)
 		ft_putstr_fd("-2147483648", fd);
 	else if (n == 0)
@@ -33,7 +34,6 @@ void	ft_putnbr_fd(int n, int fd)
 			write2 ('-', fd);
 			n *= -1;
 		}
-		y = 1;
 		while (n / y >= 10)
 			y *= 10;
 		while (y)
@@ -45,3 +45,8 @@ void	ft_putnbr_fd(int n, int fd)
 		}
 	}
 }
+/*
+    first if -> check min int 
+    else if -> check == 0
+    else -> write
+*/
