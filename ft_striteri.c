@@ -40,6 +40,6 @@ address to 'f' to be modified if necessary.
         (work little similar to ft_swap)
 */
 /*
-    line 8 -> check null
+    line 8 -> check null 
     line 9 -> return void  (return nothing just end th program)
 */
