@@ -21,9 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	x = 0;
 	y = 0;
 	str = (char *)malloc(sizeof(*s) * (len + 1));
-	if (!str)
-		return (NULL);
-	if (!s)
+	if (!str || !s)
 		return (NULL);
 	while (s[x])
 	{
@@ -37,3 +35,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[y] = '\0';
 	return (str);
 }
+/*
+ line 24 -> if !s to protect in unitest
+*/
