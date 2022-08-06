@@ -6,7 +6,7 @@
 /*   By: smeethon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 21:31:18 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/06 21:34:57 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/06 21:41:50 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*str;
 	size_t	x;
-	size_t	j;
+	size_t	y;
 
 	x = 0;
 	y = 0;
