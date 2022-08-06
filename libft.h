@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 12:30:45 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 22:17:18 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/06 10:31:27 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,14 +36,15 @@ void			*ft_memmove(void *dest, const void *src, size_t n);
 void			*ft_memchr(const void *s, int c, size_t n);
 void			*ft_memset(void *b, int c, size_t len);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
-size_t          ft_strlcat(char *dst, const char *src, size_t dstsize);
+size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 char			*ft_strrchr(char *s, int c);
 char			*ft_strnstr(const char *big, const char *little, size_t len);
 char			*ft_strdup(const char *s);
 void			*ft_calloc(size_t num, size_t size);
 void			ft_putchar_fd(char c, int fd);
-void	        ft_putendl_fd(char *x, int fd);
-void	        ft_putstr_fd(char *x, int fd);
+void			ft_putendl_fd(char *x, int fd);
+void			ft_putstr_fd(char *x, int fd);
+void			ft_putnbr_fd(int n, int fd);
 
 #endif
