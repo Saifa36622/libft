@@ -25,6 +25,7 @@ address to 'f' to be modified if necessary.
         applied func f to each char of the str 
         by pass by f that will modified it (if neces) 
         and then x++
+        (work little similar to ft_swap)
 */
 /*
     line 8 -> check null
