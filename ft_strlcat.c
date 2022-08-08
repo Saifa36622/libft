@@ -58,8 +58,18 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	x = ft_strlen(dst);
 	if (ft_strlen(dst) >= dstsize)
 		return (dstsize + ft_strlen(src));
-	while (x < dstsize - 1 && *src)
+	while (*src && x < dstsize - 1)
 		dst[x++] = *src++;
 	dst[x] = '\0';
 	return (ft_strlen(src) + x);
 }
+
+/*
+ copy src to dst by the size of dstsize -> (include '\0' so you have to 
+use dstsize - 1)
+*/
+/*
+	return value 
+	return the total length of the string they tried to create.
+	For strlcpy() that means the length of src.
+*/

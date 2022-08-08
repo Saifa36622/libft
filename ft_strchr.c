@@ -44,8 +44,10 @@ int main () {
     line 24 - 25 -> add to make func work with \0 (unit test)
 */
 /*
-    strchr use for locate character in str (convert c to char) there for 
-    if c is '\0' func will locate terminater '\0'
+    - strchr use for locate character in str (convert c to char) there for 
+    - if c is '\0' func will locate terminater '\0'
+    - return a pointer to the located character, 
+        or NULL if the character does not appear in the string.
 */
 // line 16 -> man strchr
 // line 23 -> convert const char *s to char *s to return

@@ -69,9 +69,11 @@ int main(void)
 	n -> num of byte to be analyzed
 */
 /*
-    memchr use to searh scan  n byte point by s and scan for c 
-    *** return pointer of matching byte or 
-    ( NULL -> does not have C in mem )***  
+    memchr use to searh scan  n byte in str s and scan for c 
+    (converted c to an unsigned char) 
+    *** return pointer of matching byte (byte that contain c) or 
+    ( NULL -> does not have c in mem )***  
+
 */
 // line 22 -> convert s to unsigned char keep it in str 
 // line 26 -> convert c to unsigned char to compare it to str[x]

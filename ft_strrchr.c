@@ -63,6 +63,10 @@ int main () {
 // return value -> return the last occurance of the char in str ,
 //if the value is not found -> the func will return the null pointer
 /*
+- return a pointer to the located character
+- NULL if the character does not appear in the string.
+*/
+/*
 	man strrchr
     strrchr is identical to strchr but it locate the last occurence of c
 */
