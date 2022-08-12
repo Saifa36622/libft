@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 02:05:39 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 17:31:40 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/12 20:19:36 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,19 +29,17 @@ static int	lenght(char *str)
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	unsigned int	y;
-	unsigned int	z;
 
 	y = 0;
-	z = lenght(src);
 	if (size < 1)
-		return (z);
+		return (lenght(src));
 	while (src[y] != '\0' && y < size - 1)
 	{
 		dest[y] = src[y];
 		y++;
 	}
 	dest[y] = '\0';
-	return (z);
+	return (lenght(src));
 }
 /*
 int				main(void)
