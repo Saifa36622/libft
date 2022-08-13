@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 23:25:07 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/13 16:52:20 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/13 16:56:28 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +55,16 @@ int main()
 }
 */
 /*
-allocate (with malloc) -> return a copy of s1 with the charecter in set being removed
+allocate (with malloc) -> return a copy of s1 with the charecter in 
+	set being removed
 NULL if the allocation fails.
 example 
 -> abqbc trim by abc -> q
+*/
+/*
+	line 33 -> check empty in s1 and set 
+	stop == end of s1 (strlen of s1)
+	line 42 -> check null in new str after malloc
 */
 /*
    value 
