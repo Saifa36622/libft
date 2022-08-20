@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 00:16:28 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/21 01:26:34 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/21 04:02:35 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,19 +23,20 @@ char	*ft_strnstr(const char	*big, const char *little, size_t len)
 {
 	size_t	x;
 	size_t	y;
-	size_t	z;
 
 	x = 0;
 	y = 0;
 	if (!little[0])
 		return ((char *)big);
-	z = strlen(little);
 	while (x < len && big[x])
 	{
 		if (big[x] == little[y])
 			y++;
 		else
+		{
+			x -= y;
 			y = 0;
+		}
 		if (!little[y])
 			return ((char *)big + x - y + 1);
 		x++;
@@ -47,12 +48,10 @@ char	*ft_strnstr(const char	*big, const char *little, size_t len)
 #include <stdio.h>
 int main()
 {
-	const char *largestring = "Foo Bar Baz";
-	const char *smallstring = "Bar";
-	char *ptr;
-	char *ptr2;
-	printf ("%s",ptr = strnstr(largestring, smallstring, 4));
-	printf ("%s",ptr2 = ft_strnstr(largestring, smallstring, 4));
+	const char largestring[30] = "aaabcabcd";
+	const char smallstring[10] = "aabc";
+	printf ("%s\n",ft_strnstr(largestring, smallstring, 10));
+	printf ("%s",ft_strnstr(largestring, "a", 1));
 
 }
 */
