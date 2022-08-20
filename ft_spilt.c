@@ -6,13 +6,11 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 23:24:20 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/21 00:26:48 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/21 04:51:27 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-static size_t	count(char const *s, char c)
+static size_t	count23(char const *s, char c)
 {
 	size_t	x;
 
@@ -31,7 +29,7 @@ static size_t	count(char const *s, char c)
 	return (x);
 }
 
-static size_t	check(char const *s, char c, size_t len)
+static size_t	check23(char const *s, char c, size_t len)
 {
 	if (!ft_strchr(s, c))
 		len = ft_strlen(s);
@@ -49,7 +47,7 @@ char	**ft_split(char const *s, char c)
 	y = 0;
 	if (!s)
 		return (0);
-	x = malloc((count(s, c) + 1) * sizeof(char *));
+	x = malloc((count23(s, c) + 1) * sizeof(char *));
 	if (!x)
 		return (0);
 	while (*s)
@@ -58,7 +56,7 @@ char	**ft_split(char const *s, char c)
 			s++;
 		if (*s)
 		{
-			len = check (s, c, len);
+			len = check23(s, c, len);
 			x[y++] = ft_substr(s, 0, len);
 			s += len;
 		}
@@ -69,4 +67,7 @@ char	**ft_split(char const *s, char c)
 /*
 you can not use if (! s || !x ) -> return 0
 under malloc (to got protect in uniteset)
+*/
+/*
+another malloc is in substr
 */
