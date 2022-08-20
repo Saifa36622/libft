@@ -6,13 +6,13 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 23:24:34 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/21 00:37:14 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/21 03:12:30 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	check_size(int num)
+static	size_t	check_size(int num)
 {
 	int	len;
 
