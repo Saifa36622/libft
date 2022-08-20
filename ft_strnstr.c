@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 00:16:28 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/05 17:34:25 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/21 01:26:34 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strnstr(const char	*big, const char *little, size_t len)
 	y = 0;
 	if (!little[0])
 		return ((char *)big);
-	z = ft_strlen(little);
+	z = strlen(little);
 	while (x < len && big[x])
 	{
 		if (big[x] == little[y])
@@ -51,9 +51,11 @@ int main()
 	const char *smallstring = "Bar";
 	char *ptr;
 	char *ptr2;
-	ptr = strnstr(largestring, smallstring, 4);
-	ptr2 = ft_strnstr(largestring, smallstring, 4);
-}*/
+	printf ("%s",ptr = strnstr(largestring, smallstring, 4));
+	printf ("%s",ptr2 = ft_strnstr(largestring, smallstring, 4));
+
+}
+*/
 /*
  fuc that locates the first occurrence of the null-termi-
      nated string "little" in the string "big" 
