@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 23:24:20 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/20 23:38:44 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/21 00:12:09 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static size_t	count(char const *s, char c)
 {
 	size_t	x;
 
-    x = 0;
+	x = 0;
 	if (!*s)
 		return (0);
 	while (*s)
@@ -24,22 +24,31 @@ static size_t	count(char const *s, char c)
 		while (*s == c)
 			s++;
 		if (*s)
-		    x++;
+			x++;
 		while (*s != c && *s)
 			s++;
 	}
 	return (x);
 }
 
+static size_t	check(char const *s, char c, size_t len)
+{
+	if (!ft_strchr(s, c))
+		len = ft_strlen(s);
+	else
+		len = ft_strchr(s, c) - s;
+	return (len);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**x;
-	size_t len;
+	size_t	len;
 	int		y;
 
-    y = 0;
-    if (!s)
-        return (0);
+	y = 0;
+	if (!s)
+		return (0);
 	x = malloc((count(s, c) + 1) * sizeof(char *));
 	if (!x)
 		return (0);
@@ -49,10 +58,7 @@ char	**ft_split(char const *s, char c)
 			s++;
 		if (*s)
 		{
-			if (!ft_strchr(s, c))
-				len = ft_strlen(s);
-			else
-				len = ft_strchr(s, c) - s;
+			len = check (s, c, len);
 			x[y++] = ft_substr(s, 0, len);
 			s += len;
 		}
