@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_spilt.c                                         :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 23:24:20 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/21 04:51:27 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/21 12:30:00 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static size_t	count23(char const *s, char c)
+#include "libft.h"
+
+static	size_t	count23(const char *s, char c)
 {
 	size_t	x;
 
@@ -29,7 +31,7 @@ static size_t	count23(char const *s, char c)
 	return (x);
 }
 
-static size_t	check23(char const *s, char c, size_t len)
+static	size_t	check23(const char *s, char c, size_t len)
 {
 	if (!ft_strchr(s, c))
 		len = ft_strlen(s);
@@ -38,7 +40,7 @@ static size_t	check23(char const *s, char c, size_t len)
 	return (len);
 }
 
-char	**ft_split(char const *s, char c)
+char	**ft_split(const char *s, char c)
 {
 	char	**x;
 	size_t	len;
@@ -71,3 +73,9 @@ under malloc (to got protect in uniteset)
 /*
 another malloc is in substr
 */
+/*#include <stdio.h>
+int main()
+{
+    char a[] = "jestemzzbogiemzalfa";
+    printf ("%s",*ft_split(a, 'z'));
+}*/
