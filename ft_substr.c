@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: smeethon <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 21:31:18 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/06 21:52:34 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/25 12:26:30 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,25 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	str[y] = '\0';
 	return (str);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char* str;
+
+	str = ft_substr("Hello Poon nooo", 6, 4);
+	printf("%s\n", str);
+
+	return 0;
+}
+*/
+// out put should -> "Poon" (start at the 6 index and 
+// select only 4 charecter)
+/*
+s -> the src string 
+start -> wheere to start in s
+len -> how many you wants
+*/
 /*
  line 24 -> if !s to protect in unitest
 */
