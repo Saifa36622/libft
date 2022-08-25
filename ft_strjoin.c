@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/12 21:48:53 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/13 02:05:44 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/25 15:58:38 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,12 @@ char	*ft_strjoin(const char *s1, const char *s2)
 		return (NULL);
 	while (*s1)
 	{
-		x[y] = *(char *)s1;
-		y++;
+		x[y++] = *(char *)s1;
 		s1++;
 	}
 	while (*s2)
 	{
-		x[y] = *(char *)s2;
-		y++;
+		x[y++] = *(char *)s2;
 		s2++;
 	}
 	x[y] = '\0';
