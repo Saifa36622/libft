@@ -6,7 +6,7 @@
 #    By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/24 18:12:40 by smeethon          #+#    #+#              #
-#    Updated: 2022/08/26 16:36:16 by smeethon         ###   ########.fr        #
+#    Updated: 2022/08/26 16:44:56 by smeethon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUS_OBJS)
 fclean: clean
 	rm -f $(NAME)
 re: fclean all
