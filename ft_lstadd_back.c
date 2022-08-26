@@ -6,15 +6,15 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 14:25:11 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/26 14:25:53 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/26 14:32:22 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *x;
+	t_list	*x;
 
 	x = *lst;
 	if (x)
@@ -24,5 +24,7 @@ void ft_lstadd_back(t_list **lst, t_list *new)
 		x->next = new;
 	}
 	else
+	{
 		*lst = new;
+	}
 }
