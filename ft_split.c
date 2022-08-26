@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 23:24:20 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/27 02:51:42 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/27 02:57:15 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ char	**ft_split(const char *s, char c)
 	y = 0;
 	if (!s)
 		return (0);
-	x = malloc((count23(s, c) + 1) * sizeof(char *));
+	x = malloc((count2(s, c) + 1) * sizeof(char *));
 	if (!x)
 		return (0);
 	while (*s)
@@ -58,7 +58,7 @@ char	**ft_split(const char *s, char c)
 			s++;
 		if (*s)
 		{
-			len = check23(s, c, len);
+			len = check2(s, c, len);
 			x[y++] = ft_substr(s, 0, len);
 			s += len;
 		}
