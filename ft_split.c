@@ -6,13 +6,13 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 23:24:20 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/21 12:30:00 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/27 02:51:42 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	size_t	count23(const char *s, char c)
+static	size_t	count2(const char *s, char c)
 {
 	size_t	x;
 
@@ -31,7 +31,7 @@ static	size_t	count23(const char *s, char c)
 	return (x);
 }
 
-static	size_t	check23(const char *s, char c, size_t len)
+static	size_t	check2(const char *s, char c, size_t len)
 {
 	if (!ft_strchr(s, c))
 		len = ft_strlen(s);
