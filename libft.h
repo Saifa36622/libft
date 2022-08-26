@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/24 12:30:45 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/21 00:27:14 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/08/26 14:16:15 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <string.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
@@ -53,5 +59,6 @@ char			*ft_strjoin(const char *s1, const char *s2);
 char			*ft_strtrim(const char *s1, const char *set);
 char			**ft_split(const char *s, char c);
 char			*ft_itoa(int n);
+t_list 			*ft_lstnew(void *content);
 
 #endif
