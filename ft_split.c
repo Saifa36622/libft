@@ -6,7 +6,7 @@
 /*   By: smeethon <smeethon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 23:24:20 by smeethon          #+#    #+#             */
-/*   Updated: 2022/08/27 02:57:15 by smeethon         ###   ########.fr       */
+/*   Updated: 2022/10/03 22:45:22 by smeethon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,9 +73,9 @@ under malloc (to got protect in uniteset)
 /*
 another malloc is in substr
 */
-/*#include <stdio.h>
+#include <stdio.h>
 int main()
 {
-    char a[] = "jestemzzbogiemzalfa";
-    printf ("%s",*ft_split(a, 'z'));
-}*/
+    char a[] = "jest mzzb ogiem alfa";
+    printf ("%s",*ft_split(a, 'o'));
+}
